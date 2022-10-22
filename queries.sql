@@ -18,7 +18,9 @@ rollback;
 begin;
 update animals set species='digimon' where name like '%mon';
 update animals set species='Pokimon' where NOT name like '%mon';
+commit;
 rollback;
+
 
 begin;
 DELETE FROM animals;
