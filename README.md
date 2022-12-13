@@ -1,6 +1,6 @@
 # curriculum-databases-projects-template
 
-> This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands.
+> This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands. In this branch more data are added to the table. Different Transactions are made. The results are taken after each query.
 
 
 ## Getting Started
