@@ -1,7 +1,7 @@
 # curriculum-databases-projects-template
 
-feature_branch_day_2_SQL
-> This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands. In this branch more data are added to the table. Different Transactions are made. The results are taken after each query.
+feature_branch_day_3_SQL
+> This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands. In this branch more new tables,data are added.Queries are made utilising JOIN. 
 
 
 ## Getting Started
@@ -10,7 +10,7 @@ This repository includes 3 files with plain SQL that can be used to recreate a d
 
 - schema.sql which creates all tables.
 - data.sql to populate tables with sample data.
-- queries.sql for examples of queries that can be run on a newly created database. 
+- queries.sql for examples of queries that can be run on a newly created database using JOIN. 
 
 
 ## Authors
