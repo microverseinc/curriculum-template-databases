@@ -13,6 +13,8 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 /* Transaction 1 */
 
+BEGIN;
+
 UPDATE animals SET species='unspecified';
 
 SELECT species FROM animals;
@@ -22,13 +24,17 @@ SELECT species FROM animals;
 
 UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species='pokemon' WHERE species NOT LIKE '%mon';
+
 COMMIT;
 
 SELECT * FROM animals;
 
 /* Transaction 2 */
 
+BEGIN;
+
 DELETE FROM animals;
+
 ROLLBACK;
 
 /* Transaction 3 */
