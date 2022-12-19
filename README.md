@@ -1,31 +1,32 @@
 # curriculum-databases-projects-template
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+feature-branch_day_1_pair_programming_SQL
+> This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands. In this branch more new tables,data are added.Queries are made utilising JOIN. Many to many relationships are established. Different queries are made utilising different types of JOIN.
+> indexing is done in this branch
 
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+This repository includes 3 files with plain SQL that can be used to recreate a database:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- schema.sql which creates all tables.
+- data.sql to populate tables with sample data.
+- queries.sql for examples of queries that can be run on a newly created database using JOIN. 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Tanusri Ghosh**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: https://github.com/chuaindia)
+- Twitter: https://twitter.com/chuaghosh@
+- LinkedIn:https://linkedin.com/in/tanusrighosh
 
-👤 **Author2**
+👤 **Abdulai Samuel Moiwa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/samuelmoiwa)
+- Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
 ## 🤝 Contributing
 
