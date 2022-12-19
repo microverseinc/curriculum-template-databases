@@ -29,13 +29,13 @@ Describe between 1-3 key features of the application.
 [Query made in the Table]
 
 [Indexing to upgrade the execution time]
-(back to top)
+
 
 # rocket Live Demo
 Add a link to your deployed project.
 
 # Live Demo Link
-(back to top)
+
 
 # computer Getting Started :
 
@@ -66,7 +66,7 @@ Query made in PgAdmin4 Query window.
 Deployment
 You can deploy this project using:
 
-(back to top)
+
 
 ## Authors
 
@@ -88,26 +88,23 @@ Describe 1 - 3 features you will add to the project.
  [Addition of new column]
  [Addition of More data]
  [Indexing]
-(back to top)
+
 
 # handshake Contributing
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-(back to top)
 
 # Show your support
 Write a message to encourage readers to support your project
 
 If you like this project give a ⭐️.
 
-(back to top)
 
 # pray Acknowledgments
 Give credit to everyone who inspired your codebase.
 
-(back to top)
 
 # question FAQ
 Add at least 2 questions new developers would ask when they decide to use your project.
@@ -118,7 +115,7 @@ Add at least 2 questions new developers would ask when they decide to use your p
 [How all data canbe fetched from a table?]
 
 [By SELECT * command.]
-(back to top)
+
 
 # memo License
 This project is MIT licensed.
