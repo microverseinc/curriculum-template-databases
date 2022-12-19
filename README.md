@@ -1,7 +1,8 @@
-logo
-# Microverse README.md
 
-# green_book Table of Contents
+
+Microverse README Template
+
+# Table of Contents
 
 
  # book [# curriculum-databases-projects-template]
