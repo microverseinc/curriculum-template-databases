@@ -2,7 +2,7 @@
 
 feature-branch_day_1_pair_programming_SQL
 > This is a project showing data of animals in a vet-clinic. Different queries can be made using SQL commands. In this branch more new tables,data are added.Queries are made utilising JOIN. Many to many relationships are established. Different queries are made utilising different types of JOIN.
-> indexing is done in this branch
+> Indexing is done in this branch.
 
 
 ## Getting Started
