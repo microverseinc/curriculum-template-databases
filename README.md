@@ -86,11 +86,14 @@ You can deploy this project using:
 Describe 1 - 3 features you will add to the project.
 
  [Addition of new column]
+ 
  [Addition of More data]
+ 
  [Indexing]
 
 
 # handshake Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
@@ -107,11 +110,13 @@ Give credit to everyone who inspired your codebase.
 
 
 # question FAQ
+
 Add at least 2 questions new developers would ask when they decide to use your project.
 
 [How a table can be created ?]
 
 [With CREATE TABLE TABLENAME]
+
 [How all data canbe fetched from a table?]
 
 [By SELECT * command.]
