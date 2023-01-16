@@ -27,9 +27,9 @@ ALTER TABLE animals ALTER COLUMN id SET DEFAULT nextval('animal_id_sequence');
 UPDATE animals SET id = nextval('animal_id_sequence') WHERE id IS NULL;
 ALTER TABLE animals ADD CONSTRAINT animals_pk PRIMARY KEY (id);
 ALTER TABLE animals DROP COLUMN species;
-ALTER TABLE animals ADD COLUMN species_id INTEGER;
+ALTER TABLE animals ADD COLUMN specie_id INTEGER;
 ALTER TABLE animals ADD COLUMN owner_id INTEGER;
-ALTER TABLE animals ADD CONSTRAINT species_id FOREIGN KEY (species_id) REFERENCES species(id);
+ALTER TABLE animals ADD CONSTRAINT specie_id FOREIGN KEY (specie_id) REFERENCES species(id);
 ALTER TABLE animals ADD CONSTRAINT owners_id FOREIGN KEY (owner_id) REFERENCES owners(id);
 
 CREATE TABLE vets (
@@ -41,10 +41,10 @@ CREATE TABLE vets (
 
 CREATE TABLE specializations (
     vet_id INTEGER,
-    species_id INTEGER,
-    PRIMARY KEY (vet_id, species_id),
+    specie_id INTEGER,
+    PRIMARY KEY (vet_id, specie_id),
     CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id),
-    CONSTRAINT species_id FOREIGN KEY (species_id) REFERENCES species(id)
+    CONSTRAINT specie_id FOREIGN KEY (specie_id) REFERENCES species(id)
 );
 
 CREATE TABLE visits (
