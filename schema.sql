@@ -22,9 +22,36 @@ CREATE TABLE species (
     name VARCHAR(255)
 );
 
-ALTER TABLE animals ALTER COLUMN id SERIAL PRIMARY KEY;
+CREATE SEQUENCE animal_id_sequence OWNED BY animals.id;
+ALTER TABLE animals ALTER COLUMN id SET DEFAULT nextval('animal_id_sequence');
+UPDATE animals SET id = nextval('animal_id_sequence') WHERE id IS NULL;
+ALTER TABLE animals ADD CONSTRAINT animals_pk PRIMARY KEY (id);
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INTEGER;
 ALTER TABLE animals ADD COLUMN owner_id INTEGER;
 ALTER TABLE animals ADD CONSTRAINT species_id FOREIGN KEY (species_id) REFERENCES species(id);
 ALTER TABLE animals ADD CONSTRAINT owners_id FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    age INTEGER,
+    date_of_graduation DATE
+);
+
+CREATE TABLE specializations (
+    vet_id INTEGER,
+    species_id INTEGER,
+    PRIMARY KEY (vet_id, species_id),
+    CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id),
+    CONSTRAINT species_id FOREIGN KEY (species_id) REFERENCES species(id)
+);
+
+CREATE TABLE visits (
+    vet_id INTEGER,
+    animal_id INTEGER,
+    date_of_visit DATE,
+    PRIMARY KEY (vet_id, animal_id),
+    CONSTRAINT vet_id FOREIGN KEY (vet_id) REFERENCES vets(id),
+    CONSTRAINT animal_id FOREIGN KEY (animal_id) REFERENCES animals(id)
+);
