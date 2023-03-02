@@ -10,6 +10,7 @@ CREATE TABLE animals (
 );
 
 ALTER TABLE animals ADD COLUMN species VARCHAR(100);
+ALTER TABLE animals DROP COLUMN species;
 
 CREATE TABLE owners (
   id SERIAL PRIMARY KEY,
